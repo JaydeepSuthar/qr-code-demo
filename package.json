@@ -1,0 +1,35 @@
+{
+	"name": "qr-code-demo",
+	"version": "0.1.0",
+	"description": "",
+	"main": "src/app.js",
+	"scripts": {
+		"dev": "cross-env NODE_ENV=development PORT=1337 nodemon src/app.js",
+		"start": "cross-env NODE_ENV=production node src/app.js",
+		"start:app": "cross-env NODE_ENV=development PORT=8000 node src/app.js",
+		"start:web": "cross-env NODE_ENV=development PORT=8080 node src/app.js",
+		"generate": "prisma generate",
+		"migrate:dev": "prisma migrate dev",
+		"migrate": "prisma migrate deploy",
+		"studio": "prisma studio --browser none",
+		"lint": "eslint --ext .ts,.js src/**",
+		"format": "prettier --write src"
+	},
+	"author": "Jaydeep Suthar",
+	"license": "MIT",
+	"dependencies": {
+		"@prisma/client": "4.11.0",
+		"cors": "2.8.5",
+		"cross-env": "7.0.3",
+		"dotenv": "16.0.3",
+		"express": "4.18.2",
+		"morgan": "1.10.0",
+		"zod": "3.21.4"
+	},
+	"devDependencies": {
+		"chalk": "^4.1.2",
+		"eslint": "^8.35.0",
+		"prettier": "^2.8.4",
+		"prisma": "4.11.0"
+	}
+}

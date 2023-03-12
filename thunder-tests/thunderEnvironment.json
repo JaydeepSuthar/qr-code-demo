@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "45dc45b2-a861-419f-a665-f755dedcaebf",
+    "name": "local",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2023-03-11T14:16:14.157Z",
+    "modified": "2023-03-11T14:16:14.157Z",
+    "data": [
+      {
+        "name": "local",
+        "value": "http://localhost:1337/api"
+      }
+    ]
+  }
+]
